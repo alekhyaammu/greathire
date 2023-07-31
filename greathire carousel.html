@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+   <style>
+    .container{
+        border: 3px solid Black;
+        border-radius: 30px;
+        height: 600px;
+        width: fit-content;
+    }
+section {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+ 
+}
+.section-header{
+    position: relative;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 25px;
+    color: black;
+}
+.section-header:after{
+    content: '';
+    height: 3px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    background: black;
+}
+
+.testimonials{
+    max-width: 1000px;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+}
+.single-item{
+    background: #fff;
+    color: #111;
+    padding: 15px;
+    margin: 50px 15px;
+}
+.profile{
+    margin-bottom: 30px;
+    text-align: center;    
+}
+.img-area {
+	margin: 0 15px 15px 15px;
+}
+.img-area img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 7px solid blueviolet;
+}
+.content{
+    font-size: 22px;
+}
+.content p {
+	text-align: justify;
+    padding-top: 20px;
+}
+.bio h4 {
+	font-family: 'Berkshire Swash', cursive;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1 class="section-header">Reviews</h1>
+            <div class="testimonials">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="single-item">
+                          <div class="row">
+                              <div class="col-md-5">
+                                  <div class="profile">
+                                      <div class="img-area">
+                                          <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-6-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-6-268x268.png">
+                                      </div>
+                                      <div class="bio">
+                                          <h2>Aarohi</h2>
+                                          <h4>IT Manager at Tech Mahendra</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                                 <div class="col-md-6">
+                                  <div class="content">
+                                      <p>"I was impressed with the personalized job recommendations that I received from this job portal. The system took into account my skills,experience, and location to suggest jobs that were a great fit for me. I found my current job through this website and I am happier!"</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="single-item">
+                          <div class="row">
+                              <div class="col-md-5">
+                                  <div class="profile">
+                                      <div class="img-area">
+                                          <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-9-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-9-268x268.png">
+                                      </div>
+                                      <div class="bio">
+                                          <h2>Aditi</h2>
+                                          <h4>Certified Public Accountant at Infosys</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="content">
+                                      <p>"I found my dream job through this job portal! The website was easy to navigate and the jobs postings were up-to-date and relevant to my skills and interests. Thank you for me helping me find the perfect job!"</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="single-item">
+                          <div class="row">
+                              <div class="col-md-5">
+                                  <div class="profile">
+                                      <div class="img-area">
+                                          <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-20-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-20-268x268.png">
+                                      </div>
+                                      <div class="bio">
+                                          <h2>Rishi</h2>
+                                          <h4>Human Resource at Amazon</h4>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="content">
+                                      <p>"I highly recommend this job portal to anyone who is looking for  a new job.The platform is user-friendly and the job searchfilters are very helpful. I was able to quickly find job opportunities that matched my qualifications and preferences."</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  <div class="carousel-item">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile">
+                                    <div class="img-area">
+                                        <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-5-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-5-268x268.png">
+                                    </div>
+                                    <div class="bio">
+                                        <h2>Radhika</h2>
+                                        <h4>Marketing Manager at IBM</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    <p>"This job portal is a game-changer for job seekers! It provides a wealth of information about the companies that are hiring,including reviews from current and former employees. I used this information to make an informed decision about where to apply and I landed a job at a company that I love!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile">
+                                    <div class="img-area">
+                                        <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-13-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-13-268x268.png">
+                                    </div>
+                                    <div class="bio">
+                                        <h2>Arjun</h2>
+                                        <h4>Digital Marketing Manager at Zomato</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    <p>"I was able to connect with recruiters and hiring managers through this job portal, which made the job search process much easier. The platform allowed me to upload my resume and apply to jobs with just a few clicks. I received several job offers as a result of using this website."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile">
+                                    <div class="img-area">
+                                        <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-12-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-12-268x268.png">
+                                    </div>
+                                    <div class="bio">
+                                        <h2>Riya</h2>
+                                        <h4>HR Recruiter at Dell</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    <p>"We've  had great success with this job portal in finding quality candidates for our open positions. The search functionality is robust and easy to use, and the platform provides a good balance of both active and passive candidates."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            
+                <div class="carousel-item">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile">
+                                    <div class="img-area">
+                                        <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-16-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-16-268x268.png">
+                                    </div>
+                                    <div class="bio">
+                                        <h2>Raghava Reddy</h2>
+                                        <h4>Recruitment Manager at HSBC</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    <p>"Our company has been using this job portal for several years now, and it has consistently delivered great results. The platform is intuitive and user-friendly, and we appreciate the ability to easily manage and track applicants through the hiring process."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile">
+                                    <div class="img-area">
+                                        <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-19-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-19-268x268.png">
+                                    </div>
+                                    <div class="bio">
+                                        <h2>Siddarth</h2>
+                                        <h4>Student at IIM</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    <p>"I recently completed a course on this job portal and was extremely impressed with the quality of instruction and course content. The course was well-structured and easy to follow, and the instrucors were knowledgeable and engaging. I feel much more confident in my skills now and am excited to apply what I learned to my career."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile">
+                                    <div class="img-area">
+                                        <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-15-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-15-268x268.png">
+                                    </div>
+                                    <div class="bio">
+                                        <h2>Varun</h2>
+                                        <h4>Student at IIM</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    <p>"I have taken several courses on this job portal and have found them to be a great way to learn new skills and stay up-to-date with industry trends. The courses are affordable  and accessible and the content, and content is always high-quality and relevant. I would highly recommend these courses to anyone looking to advance their career."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <div class="single-item">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="profile">
+                                    <div class="img-area">
+                                        <img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-8-268x268.png" alt="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-8-268x268.png">
+                                    </div>
+                                    <div class="bio">
+                                        <h2>Sharada</h2>
+                                        <h4>Software Developer at Accentures</h4>
+                                       </div>
+                                         </div>
+                                        </div>
+                            <div class="col-md-6">
+                                <div class="content">
+                                    <p>"I was hesitant to take an online course at first, but I am  so glad I did. The course was well-organized and provided a lot of valuable information that I've been able to apply to my job.The interactive nature of the course made it feel like I was in a real classroom, and the instructor were always available to answer my questions. I would definitely take another cousre on this job portal."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark"></span>
+                  </div>
+                  <div class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark"></span>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

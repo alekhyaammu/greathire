@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        #SV{
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            margin:0;
+            border: 3px solid;
+            background-color: rgba(21, 38, 56);
+            width: fit-content;
+            height: fit-content;
+        }
+        .counter-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 30px 50px;
+            transition: 0.2s linear;
+        }
+
+        .counter-container{
+            transform: scale(1.1);
+        }
+        .counter{
+            font-size: 60px;
+            margin-top: 10px;
+            color: whitesmoke;
+        }
+        #ABB{
+            font-size: 75px;
+            color: whitesmoke;
+        }
+        #QA{
+            color: whitesmoke;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <div id="SV">
+        <div class="counter-container">
+            <i id="ABB" class="fa-sharp fa-solid fa-user-graduate"></i>
+            <div  id="counter1" class="counter" data target="587625">587625</div>
+            <span id="QA">Students got Trained</span>
+        </div>
+        <div class="counter-container">
+            <i id="ABB"  class="fa-sharp fa-solid fa-briefcase"></i>
+            <div id="counter2" class="counter"  data target="19852">19852</div>
+            <span id="QA">Got Job Placement in MNC</span>
+        </div>
+        <div class="counter-container">
+            <i id="ABB" class="fa-solid fa-rocket"></i>
+            <div id="counter3" class="counter"  data target="42">42</div>
+            <span id="QA">%  Average Salary Hike</span>
+        </div>
+       <script>
+            let counter = setInterval(updated,100);
+            let upto = 587583;
+            function updated() {
+                let count = document.getElementById("counter1");
+                count.innerHTML = ++upto;
+                if (upto === 587625) {
+                    clearInterval(counter);
+                }
+            }
+        </script>
+    <script>
+        let counter2 = setInterval(updated,100);
+        let target = 19811;
+        function updated() {
+            let count = document.getElementById("counter2");
+            count.innerHTML = ++target;
+            if (target === 19852) {
+                clearInterval(counter2);
+            }
+        }
+    </script>
+    <script>
+        let counter3 = setInterval(updated,100);
+        let upto12 = 0;
+        function updated() {
+            let count = document.getElementById("counter3");
+            count.innerHTML = ++upto12;
+            if (upto12 === 42) {
+                clearInterval(counter3);
+            }
+        }
+    </script>
+</body>
+</html>
